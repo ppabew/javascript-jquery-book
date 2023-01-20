@@ -28,6 +28,10 @@
              */
             $(document).ready(function() {
                 var $liList = $("ul.menu li");
+                for (let i = 0; i < $liList.length; i++) {
+                    let borderPx = (i+1)*2;
+                    $liList.eq(i).css("border", `${borderPx}px solid #f00`);
+                }
 
             });
         </script>

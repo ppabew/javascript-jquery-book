@@ -27,7 +27,10 @@
              예제 04: each() 메서드의 index 값 확인하기
              */
             $(document).ready(function() {
-
+                let $liList = $("ul.menu li");
+                $liList.each(function () {
+                    console.log(this)
+                })
             });
 /*            
             실행결과:

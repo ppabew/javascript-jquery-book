@@ -28,7 +28,10 @@
              */
                 $(document).ready(function() {
                     var $liList = $("ul.menu li");
-
+                    $liList.each(function (index) {
+                        let borderPx = (index+1) * 2;
+                        $liList.eq(index).css("border", `${borderPx}px solid #f00`)
+                    })
                 });
         </script>
     </head>

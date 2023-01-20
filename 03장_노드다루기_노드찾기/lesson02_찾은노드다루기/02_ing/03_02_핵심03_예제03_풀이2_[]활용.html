@@ -30,7 +30,9 @@
             $(document).ready(function() {
                 var $liList = $("ul.menu li");
                 // 여기에 풀이를 입력해주세요.
-
+                $liList.each(function (index) {
+                    console.log(`index: ${index}`);
+                })
             });
 
         </script>
